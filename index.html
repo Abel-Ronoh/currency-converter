@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <script language="javascript">
+        var check = confirm("convert to USD");
+        var number = prompt("input amount");
+        function toKsh(){
+           
+            document.write(number * 102);
+        
+        }
+        function toUsd(){
+            document.write(number/102);
+               
+        
+        }
+       if (check == true){
+         toUsd()
+       }
+       else{
+         toKsh()
+       }
+       
+    </script>
+</body>
+</html>
